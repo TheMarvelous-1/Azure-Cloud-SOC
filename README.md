@@ -34,6 +34,15 @@ For the "BEFORE" metrics, all resources were originally deployed, exposed to the
 
 For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
 
+I also took the opportunity to simulate specific attacks via PowerShell scripts or by manually triggering events. The results were observed in Log Analytics Workspace and Sentinel Incident Creation.  
+
+- Linux Brute Force Attempt 
+- AAD Brute Force Success 
+- Windows Brute Force Success
+- Malware Detection (EICAR Test File) 
+- Privilege Escalation  
+
+
 ## Attack Maps Before Hardening / Security Controls
 ![NEW nsg malicious allowed in (Before)](https://github.com/user-attachments/assets/cd700fec-5468-46f5-b0dd-56286bc9d609)
 ![Syslog ssh auth fail (before)](https://github.com/user-attachments/assets/19960dd6-d064-4bfb-bff0-bb034b83a8fe)
