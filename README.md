@@ -39,6 +39,7 @@ The architecture of the mini honeynet in Azure consists of the following compone
 For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet; aka, no use for Private Endpoints.
 
 For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
+Using NIST SP 800-53 R4, NIST SP 800-61 R2 to harden the enviornemt and to also do our Incident Repsonse handling according to those framworks which i outline in my other lab.
 
 I also took the opportunity to simulate specific attacks via PowerShell scripts or by manually triggering events. The results were observed in Log Analytics Workspace and Sentinel Incident Creation.  
 
